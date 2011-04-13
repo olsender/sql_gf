@@ -1,31 +1,6 @@
-" SQL filetype plugin file
-"
-" Description:
-"   Go to db function source file.
-"   Source files have to have names matching to functions names
-"   and be placed in the directories matching to schemas names. (i.e. sql_gf_home/schema/function.sql)
-"
-"  
-"   Plugin defines three mappings:
-"       <leader>gf  - go to file
-"       <leader>wf  - split horizontally 
-"       <leader>vf  - split vertically 
-"
-"   <leader> key is usually backslash
-"   
-"   Usage example:
-"   In a sql file place cursor on the schema.function and press \gf
-"
-" Installation:
-"   Place sql_gf.vim in your ftplugin directory.
-"   Set the variable g:sql_gf_home in your .vimrc
-"   ponting to the directoty with schemas folder
-"   let g:sql_gf_home = '~/mydb'
-"
-" Creator: Sasha Aliashkevich
-"
+" Homepage: http://github.com/olsender/sql_gf 
+" Creator: Sasha Aliashkevich <olsender at gmail dot com>
 " Version: 0.1
-"
 
 if exists("b:did_sql_gf")
     finish
